@@ -7,6 +7,8 @@ Program is used to create a todo list.
 The program itself renders the view after each change, so that the entire list can be dynamically handled.
 You can add, delete, and mark products as purchased.
 
+link: https://przemek-przybylak.github.io/To-Do-List-React/
+
 ## Technology used in the Shopping-list
 React - open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications. ( more about React bellow)
 BEM - The Block, Element, Modifier methodology is a popular naming convention for classes in HTML and CSS. Introduction: (http://getbem.com/introduction/)
