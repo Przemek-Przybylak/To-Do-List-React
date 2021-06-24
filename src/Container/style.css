@@ -1,0 +1,19 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.Container {
+    background-color: #eee;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 50px 200px;
+}
+
+@media (max-width: 996px) {
+    .Container {
+        padding: 30px 20px;
+    }
+}
