@@ -6,7 +6,7 @@ const Tasks = ({ tasks, hideDoneTasks }) => (
             <li key={task.id}
                 className={`section__item ${hideDoneTasks && task.done ? "button--hidden" : ""}`}
             >
-                <button className="section__imageButton section__imageButton--green  "
+                <button className="section__imageButton section__imageButton--green"
                 >
                     {task.done ? "✔" : ""}
                 </button>
