@@ -6,7 +6,7 @@ html {
     box-sizing: inherit;
 }
 
-.Container {
+.container {
     background-color: #eee;
     font-family: 'Ubuntu', sans-serif;
     padding: 50px 200px;
@@ -14,7 +14,7 @@ html {
 }
 
 @media (max-width: 996px) {
-    .Container {
+    .container {
         padding: 30px 20px;
     }
 }
