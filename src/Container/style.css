@@ -10,6 +10,7 @@ html {
     background-color: #eee;
     font-family: 'Ubuntu', sans-serif;
     padding: 50px 200px;
+    height: 100vh;
 }
 
 @media (max-width: 996px) {
