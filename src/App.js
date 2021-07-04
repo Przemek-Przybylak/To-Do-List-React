@@ -12,15 +12,24 @@ import Container from "./Container";
 
 function App() {
 
+  const setAllDone = () => {
+    setTasks(tasks => tasks.map(task => {
+      return {
+        ...task,
+        done: true,
+      }
+    }));
+  };
+
   const toggleTaskDone = (id) => {
     setTasks(tasks => tasks.map(task => {
-        if (task.id === id) {
-          return { ...task, done:!task.done};
-        }
-        return task;
+      if (task.id === id) {
+        return { ...task, done: !task.done };
       }
+      return task;
+    }
     ));
-  } ;
+  };
 
   const [tasks, setTasks] = useState([
     { id: 1, content: "obejrzeć mecz", done: false },
@@ -54,15 +63,16 @@ function App() {
         body={
           <Tasks
             tasks={tasks}
-            hideDone={hideDone} 
+            hideDone={hideDone}
             removeTasks={removeTasks}
             toggleTaskDone={toggleTaskDone}
-            />}
+          />}
         extraHeaderContent={
           <Buttons
             tasks={tasks}
             hideDone={hideDone}
-            toggleHideDone={toggleHideDone} />}
+            toggleHideDone={toggleHideDone}
+            setAllDone={setAllDone} />}
       />
 
     </Container>
