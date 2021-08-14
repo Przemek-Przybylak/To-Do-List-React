@@ -1,9 +1,9 @@
-import "./style.css"
+import { Container }from "./styled"
 
 const container = ({ children }) => (
-    <main className="container">
+    <Container className="container">
         {children}
-    </main>
+    </Container>
 )
 
 export default container
