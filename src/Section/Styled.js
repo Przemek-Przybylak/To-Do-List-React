@@ -5,7 +5,7 @@ export const StyledSection = styled.section`
     background-color: white;
 `;
 
-export const StyledSectionContainer = styled.div`
+export const SectionContainer = styled.div`
     border-bottom: 1px solid rgb(214, 214, 214);
     display: flex;
     justify-content: space-between;
@@ -17,7 +17,7 @@ export const StyledSectionContainer = styled.div`
     };
 `;
 
-export const SectionTittle = styled.h2`
+export const Tittle = styled.h2`
     padding: 30px;
     font-size: 22px;
     margin-bottom: 0;

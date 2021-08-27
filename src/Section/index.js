@@ -1,11 +1,11 @@
-import { SectionTittle, StyledSection, StyledSectionContainer } from "./Styled"
+import { Tittle, StyledSection, SectionContainer } from "./Styled"
 
 const Section = ({ tittle, body, extraHeaderContent }) => (
     <StyledSection>
-        <StyledSectionContainer>
-            <SectionTittle>{tittle}</SectionTittle>
+        <SectionContainer>
+            <Tittle>{tittle}</Tittle>
             {extraHeaderContent}
-        </StyledSectionContainer>
+        </SectionContainer>
         {body}
     </StyledSection>
 )

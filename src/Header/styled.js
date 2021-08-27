@@ -5,7 +5,7 @@ export const StyledHeader = styled.header`
     font-size: 16px;
 `;
 
-export const StyledHeaderTittle = styled.h1`
+export const Tittle = styled.h1`
     padding-top: 20px;
     padding-bottom: 10px;
 

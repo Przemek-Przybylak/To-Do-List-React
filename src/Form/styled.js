@@ -11,7 +11,7 @@ export const StyledForm = styled.form`
     };
 `;
 
-export const StyledButton = styled.button`
+export const Button = styled.button`
     height: 40px;
     margin-left: 15px;
     margin-right: 15px;
@@ -35,7 +35,7 @@ export const StyledButton = styled.button`
     };
 `;
 
-export const StyledInput = styled.input`
+export const Input = styled.input`
     font-size: 20px;
     width: 100%;
     padding: 10px;
@@ -49,7 +49,7 @@ export const StyledInput = styled.input`
     };
 `;
 
-export const StyledParagraph = styled.p`
+export const Paragraph = styled.p`
     flex-basis: 100%;
     padding: 0px 0px 0px 20px;
 `;
