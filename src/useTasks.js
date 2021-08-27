@@ -41,14 +41,14 @@ export const useTasks = () => {
         ));
     };
 
-    const removeTasks = (id) => {
+    const removeTask = (id) => {
         setTasks(tasks => tasks.filter(
             task => task.id !== id));
     };
 
     return {
         tasks,
-        removeTasks,
+        removeTask,
         toggleTaskDone,
         setAllDone,
         addNewTask,

@@ -12,7 +12,7 @@ function App() {
 
   const {
     tasks,
-    removeTasks,
+    removeTask,
     toggleTaskDone,
     setAllDone,
     addNewTask,
@@ -39,7 +39,7 @@ function App() {
           <Tasks
             tasks={tasks}
             hideDone={hideDone}
-            removeTasks={removeTasks}
+            removeTask={removeTask}
             toggleTaskDone={toggleTaskDone}
           />}
         extraHeaderContent={
