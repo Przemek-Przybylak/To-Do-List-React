@@ -8,15 +8,15 @@ export const ButtonItem = styled.button`
     transition: 0.5s;
 
     @media (max-width: 767px) {
-        width: 100%;
+    width: 100%;
     };
 
     &:hover{
-        color: rgb(56, 179, 179);
-        cursor: pointer;
+    color: rgb(56, 179, 179);
+    cursor: pointer;
     };
 
     &:disabled{
-        color: #ccc;
+    color: #ccc;
     };
 `;
