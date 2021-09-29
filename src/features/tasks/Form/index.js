@@ -7,17 +7,15 @@ import { StyledForm, Button, Input, Paragraph } from "./styled";
 const Form = () => {
     const [content, setcontent] = useState("");
     const dispatch = useDispatch();
-
-    dispatch(addTask ({
-        content: content.trim(),
-        done: false,
-        id: nanoid,
-    }))
-
     const inputRef = useRef(null);
 
     const onFormSubmit = (event) => {
         event.preventDefault();
+        dispatch(addTask({
+            content: content.trim(),
+            done: false,
+            id: nanoid(),
+        }));
         addTask();
         setcontent("");
         inputRef.current.focus();
@@ -40,6 +38,6 @@ const Form = () => {
             </Button>
         </StyledForm>
     );
-}
+};
 
 export default Form

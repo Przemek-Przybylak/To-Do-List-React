@@ -10,7 +10,7 @@ export const Tittle = styled.h1`
     padding-bottom: 10px;
 
     @media(max-width: 996px){
-        padding-top: 5px;
-        padding-bottom: 3px;
+    padding-top: 5px;
+    padding-bottom: 3px;
     };
 `;

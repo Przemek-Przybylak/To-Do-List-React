@@ -16,5 +16,5 @@ const taskSlice = createSlice({
     },
 })
 export const { addTask, toggleHideDone }= taskSlice.actions;
-export const selectTasks= state =>state.Tasks;
+export const selectTasks = state => state.tasks;
 export default taskSlice.reducer;

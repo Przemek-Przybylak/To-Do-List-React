@@ -8,11 +8,10 @@ export const Container = styled.main`
     box-sizing: border-box;
 
 @media (max-width: 996px) {
-
-        padding: 30px 20px;
+    padding: 30px 20px;
     };
 
 &*, ::after, ::before {
     box-sizing: inherit;
-};
+    };
 `;

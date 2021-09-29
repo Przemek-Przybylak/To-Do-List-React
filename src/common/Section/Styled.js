@@ -12,8 +12,8 @@ export const SectionContainer = styled.div`
     align-items: center;
 
     @media (max-width: 767px) {
-        flex-wrap: wrap;
-        justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
     };
 `;
 
@@ -24,6 +24,6 @@ export const Tittle = styled.h2`
     margin-top: 0px;
 
     @media (max-width: 767px) {
-        width: 100%;
-};
+    width: 100%;
+    };
 `;

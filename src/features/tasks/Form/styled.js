@@ -6,8 +6,8 @@ export const StyledForm = styled.form`
     align-items: center;
 
     @media (max-width: 767px) {
-        flex-wrap: wrap;
-        align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
     };
 `;
 
@@ -22,16 +22,16 @@ export const Button = styled.button`
     transition: 0.5s;
 
     @media (max-width:767px) {
-        align-self: center;
-        margin-bottom: 20px;
-        width: 90%;
-        margin-right: auto;
-        margin-left: auto;
+    align-self: center;
+    margin-bottom: 20px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
     };
 
     &:hover{
-        background-color: rgb(56, 179, 179);
-        transform: scale(1.1);
+    background-color: rgb(56, 179, 179);
+    transform: scale(1.1);
     };
 `;
 
@@ -43,9 +43,9 @@ export const Input = styled.input`
     border: 1px solid rgb(214, 214, 214);
 
     @media (max-width:767px) {
-        margin-right: 5%;
-        margin-left: 5%;
-        width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
     };
 `;
 
