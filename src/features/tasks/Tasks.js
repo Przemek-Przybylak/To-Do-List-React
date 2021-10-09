@@ -1,9 +1,10 @@
 import Form from "./Form";
 import TasksList from "./TasksList";
-import Buttons from "./Buttons";
+import Buttons from "../../Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 import Container from "../../common/Container";
+import { Button } from "../../Button";
 
 export function Tasks() {
 
@@ -16,6 +17,9 @@ export function Tasks() {
         tittle="Dodaj nowe zadanie"
         body={
           < Form />
+        }
+        extraHeaderContent={ 
+          <Button />
         }
       />
       <Section
