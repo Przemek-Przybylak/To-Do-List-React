@@ -3,7 +3,7 @@ import { ButtonItem } from "../Buttons/styled";
 import { fetchExampleTasks } from "../features/tasks/tasksSlice";
 
 export const Button = () => {
-    const dispatch = useDispatch
+    const dispatch = useDispatch();
     return (
         <ButtonItem
             onClick={() => dispatch(fetchExampleTasks())}>
