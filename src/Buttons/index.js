@@ -6,7 +6,7 @@ const Buttons = () => {
   const { tasks, hideDone } = useSelector(selectTasks);
   const dispatch = useDispatch();
 
-  if (tasks.lenght === 0)
+  if (tasks.length === 0)
     return null;
 
   return (
