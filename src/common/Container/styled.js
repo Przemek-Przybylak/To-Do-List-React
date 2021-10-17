@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-    background-color: #eee;
     font-family: 'Ubuntu', sans-serif;
     padding: 50px 300px;
     height: 100vh;
