@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,KACE,qBACF,CAEA,iBACE,kBACF,CAEA,MACE,mCACF","file":"main.88d7f020.chunk.css","sourcesContent":["html {\n  box-sizing: border-box;\n}\n\n*, ::after, ::before {\n  box-sizing: inherit;\n}\n\n.body{\n  font-family: 'Montserrat', sans-serif;\n}\n"]}
