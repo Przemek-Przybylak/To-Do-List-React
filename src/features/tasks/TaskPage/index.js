@@ -15,7 +15,7 @@ export function TaskPage() {
         tittle="Szczegóły zadania"
       />
       <Section
-        tittle={task.content}
+        tittle={task ? task.content : "Nie znaleziono zadania"}
         body={
             <><strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}</>
         }
