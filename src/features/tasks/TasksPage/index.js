@@ -5,9 +5,10 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
 import { Button } from "../../../Button";
+import Search from "./Search";
 
 export function TasksPage() {
- 
+
   return (
     <Container>
       <Header
@@ -18,8 +19,14 @@ export function TasksPage() {
         body={
           < Form />
         }
-        extraHeaderContent={ 
+        extraHeaderContent={
           <Button />
+        }
+      />
+      <Section
+        tittle="Wyszukiwarka"
+        body={
+          <Search />
         }
       />
       <Section
@@ -27,7 +34,7 @@ export function TasksPage() {
         body={
           <TasksList />
         }
-        extraHeaderContent={ 
+        extraHeaderContent={
           <Buttons />
         }
       />
