@@ -4,15 +4,15 @@ import { getTasksFromLocalStorage } from "./tasksLocalStorage";
 const taskSlice = createSlice({
     name: 'tasks',
     initialState: {
-        tasks: getTasksFromLocalStorage().tasks,
+        tasks: getTasksFromLocalStorage(),
         hideDone: false,
     },
     reducers: {
-        addTask: ({tasks}, {payload}) => {
+        addTask: ({ tasks }, { payload }) => {
             tasks.push(payload)
         },
         toggleHideDone: state => {
-            state.hideDone= !state.hideDone;
+            state.hideDone = !state.hideDone;
         },
         toggleTaskDone: (state, action) => {
             const index = state.tasks.findIndex(task => task.id === action.payload);
@@ -33,24 +33,26 @@ const taskSlice = createSlice({
         }
     },
 })
-export const { 
-    addTask, 
+export const {
+    addTask,
     setTasks,
-    toggleHideDone, 
-    toggleTaskDone, 
-    setAllDone, 
+    toggleHideDone,
+    toggleTaskDone,
+    setAllDone,
     removeTask,
-    fetchExampleTasks, 
-}= taskSlice.actions;
+    fetchExampleTasks,
+} = taskSlice.actions;
 export const selectTaskState = state => state.tasks;
 export const selectTask = state => selectTaskState(state).tasks;
 export const getTaskById = (state, taskId) =>
-    selectTask(state).find(({id}) => id === taskId);
+    selectTask(state).find(({ id }) => id === taskId);
 export const selectTasksByQuery = (state, query) => {
-const tasks = selectTask(state);
+    const tasks = selectTask(state);
     if (!query || query.trim() === "") {
-    return tasks;
-}    
-return tasks.filter(({content}) => content.inculdes(query.trim()));
+        return tasks;
+    }
+    return tasks.filter(({ content }) => {
+        return content?.includes?.(query.trim())
+    });
 }
 export default taskSlice.reducer;
