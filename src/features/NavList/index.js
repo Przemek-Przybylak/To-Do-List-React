@@ -1,14 +1,15 @@
-import { Link } from "react-router-dom";
-import { Ul, Li, Span } from "./styled"
+import { StyledNavLink } from "../../styled";
+import { Ul, Li } from "./styled"
+
 
 export const NavList = () => {
     return (
         <Ul>
             <Li>
-                <Link to="/zadania"><Span>Zadania</Span></Link>
+                <StyledNavLink to="/zadania">Zadania</StyledNavLink>
             </Li>
             <Li>
-                <Link to="/author"><Span>O autorze</Span></Link>
+                <StyledNavLink to="/author">O autorze</StyledNavLink>
             </Li>
         </Ul>
     )
