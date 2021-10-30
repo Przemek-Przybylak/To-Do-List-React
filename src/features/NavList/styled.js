@@ -16,7 +16,3 @@ export const Li = styled.li`
     font-size: 23px;
 `;
 
-export const Span = styled.span`
-    text-decoration: none;
-    color: white;
-`;
