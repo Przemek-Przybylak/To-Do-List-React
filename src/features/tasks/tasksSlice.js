@@ -27,20 +27,25 @@ const taskSlice = createSlice({
             const removeIndex = state.tasks.findIndex(task => task.id === action.payload);
             state.tasks.splice(removeIndex, +1);
         },
-        fetchExampleTasks: () => { },
-        setTasks: (state, { payload: tasks }) => {
+        fetchExampleTasks: state => { state.loading =  true },
+        fetchExampleTasksSuccess: (state, { payload: tasks }) => {
             state.tasks = tasks;
-        }
+            state.loading = false;
+        },
+        fetchExampleTasksError: (state) => {
+            state.loading = false;
+        },
     },
 })
 export const {
     addTask,
-    setTasks,
+    fetchExampleTasksSuccess,
     toggleHideDone,
     toggleTaskDone,
     setAllDone,
     removeTask,
     fetchExampleTasks,
+    fetchExampleTasksError,
 } = taskSlice.actions;
 export const selectTaskState = state => state.tasks;
 export const selectTask = state => selectTaskState(state).tasks;
@@ -55,4 +60,6 @@ export const selectTasksByQuery = (state, query) => {
         return content?.includes?.(query.trim())
     });
 }
+
+export const selectLoading = state => selectTaskState(state).loading;
 export default taskSlice.reducer;
