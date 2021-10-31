@@ -13,6 +13,7 @@ export const Ul = styled.ul`
 export const Li = styled.li`
     list-style-type: none;
     padding: 5px;
-    font-size: 23px;
+    font-size: 20px;
+    margin: 10px 20px;
 `;
 
