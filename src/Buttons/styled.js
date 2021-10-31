@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const ButtonItem = styled.button`
     border: none;
@@ -15,6 +15,11 @@ export const ButtonItem = styled.button`
     color: rgb(56, 179, 179);
     cursor: pointer;
     };
+
+    ${({ disabled }) => disabled && css`
+        color: #ccc;
+        cursor: not-allowed;
+    `}
 
     &:disabled{
     color: #ccc;
