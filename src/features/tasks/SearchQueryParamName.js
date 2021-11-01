@@ -1,1 +1,3 @@
-export default "szukaj";
+const SearchQueryParamName = "szukaj";
+
+export default SearchQueryParamName
