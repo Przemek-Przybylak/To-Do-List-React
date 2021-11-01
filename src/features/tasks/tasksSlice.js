@@ -27,7 +27,7 @@ const taskSlice = createSlice({
             const removeIndex = state.tasks.findIndex(task => task.id === action.payload);
             state.tasks.splice(removeIndex, +1);
         },
-        fetchExampleTasks: state => { state.loading =  true },
+        fetchExampleTasks: state => { state.loading = true },
         fetchExampleTasksSuccess: (state, { payload: tasks }) => {
             state.tasks = tasks;
             state.loading = false;
@@ -56,10 +56,8 @@ export const selectTasksByQuery = (state, query) => {
     if (!query || query.trim() === "") {
         return tasks;
     }
-    return tasks.filter(({ content }) => {
-        return content?.includes?.(query.trim())
-    });
-}
+    return tasks.filter(({ content }) => content.toUpperCase().includes(query.trim().toUpperCase()));
+};
 
 export const selectLoading = state => selectTaskState(state).loading;
 export default taskSlice.reducer;
