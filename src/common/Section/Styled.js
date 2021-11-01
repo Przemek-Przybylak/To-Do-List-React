@@ -18,7 +18,7 @@ export const SectionContainer = styled.div`
 `;
 
 export const Tittle = styled.h2`
-    padding: 30px;
+    padding: 20px;
     font-size: 22px;
     margin-bottom: 0;
     margin-top: 0px;
