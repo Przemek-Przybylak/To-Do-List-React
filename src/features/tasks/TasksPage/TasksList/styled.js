@@ -24,6 +24,19 @@ export const Button = styled.button`
         flex-shrink: 0;
         border: none;
 
+        ${({ toggleDone }) => toggleDone && css`
+        margin-right: 10px;
+        background-color: darkgreen;
+        background-position: center;
+        transition: 0.5s;
+        background-size: cover;
+        color: white;
+
+        &:hover{
+        background-color: forestgreen;
+            }
+        `};
+
         ${({ remove }) => remove && css`
         margin-left: auto;
         margin-right: 1px;
@@ -35,19 +48,6 @@ export const Button = styled.button`
 
         &:hover{
         background-color: rgb(255, 101, 45);
-            }
-        `};
-
-        ${({ toggleDone }) => toggleDone && css`
-        margin-right: 10px;
-        background-color: darkgreen;
-        background-position: center;
-        transition: 0.5s;
-        background-size: cover;
-        color: white;
-
-        &:hover{
-        background-color: forestgreen;
             }
         `};
     `;
