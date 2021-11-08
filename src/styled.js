@@ -13,4 +13,9 @@ export const StyledNavLink = styled(NavLink)`
 export const StyledLink = styled(Link)`
     color: teal;
     text-decoration: none;
+
+    &:hover{
+    color: rgb(56, 179, 179);
+    cursor: pointer;
+    };
 `;
