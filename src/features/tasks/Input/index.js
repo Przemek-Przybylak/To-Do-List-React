@@ -12,8 +12,6 @@ export const Input = styled.input`
     margin-left: 5%;
     width: 90%;
     };
-
-    
 `;
 
 export const Paragraph = styled.p`
