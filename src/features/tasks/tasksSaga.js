@@ -20,7 +20,6 @@ function* saveTasksInLocalStorageHandler() {
 }
 
 export function* tasksSaga() {
-    console.log("saga")
     yield takeEvery(fetchExampleTasks.type, FetchExampleTasksHandler);
     yield takeEvery("*", saveTasksInLocalStorageHandler);
 }
