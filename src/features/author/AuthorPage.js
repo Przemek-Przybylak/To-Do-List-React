@@ -1,7 +1,7 @@
-import Section from "../../common/Section";
+import Section from "../../common/Section/";
 import Header from "../../common/Header";
 import Container from "../../common/Container";
-import { Article } from "./styled";
+import { Article, Paragraph } from "./styled";
 
 export const AuthorPage = () => {
     return (
@@ -14,16 +14,20 @@ export const AuthorPage = () => {
                 body={
                     <>
                         <Article>
-                            Nazywam się Przemysław Przybylak budową stron interesuję się od 2021 roku.<br />
+                           <Paragraph> 
+                            Nazywam się Przemysław Przybylak budową stron interesuję się od 2021 roku.
                             Obecnie moim głównym celem jest zostanie frontend developerem. Chcę jak najszybciej zostać
-                            profesjonalistą i rozpocząć swoją przygodę w branży IT!<br />
-                            Prywatnie jestem ojcem 2 dzieci. Są to dziewczynki pierwsza ma na imię <em>Ola</em>, a druga 
+                            profesjonalistą i rozpocząć swoją przygodę w branży IT!
+                            </Paragraph>
+                            <Paragraph>
+                                Prywatnie jestem ojcem 2 dzieci. Są to dziewczynki pierwsza ma na imię <em>Ola</em>, a druga 
                             <em> Natalia</em>. Niedługo nasza rodzina powiększy się o kolejnego członka rodziny, a mianowicie o
-                            <em> Magdalenę</em>.<br />
+                            <em> Magdalenę</em>.
+                            </Paragraph>
+                            <Paragraph>
                             Kocham podróżować, oraz przebywać na łonie natury. Nieważne czy Tatry, czy pobliski las, przyroda od
-                            zawsze była dla mnie źródłem potężnego spokoju wewnętrznego, oraz natchnienia.<br />
-                            Skoro kocham góry, to dlaczego nie zająć się alpinistyką przemysłową?<br />
-                            Niedawno zdobyłem certyfikat IRATA level 1, dzięki czemu mogę wykonuję pracę Alpinisty Przemysłowego.
+                            zawsze była dla mnie źródłem potężnego spokoju wewnętrznego, oraz natchnienia.
+                            </Paragraph>
                         </Article>
                     </>
                 }
